@@ -1,0 +1,9 @@
+[
+    "red",
+    "green",
+    "blue",
+    {
+        "name": "New Item",
+        "value": 100
+    }
+]
