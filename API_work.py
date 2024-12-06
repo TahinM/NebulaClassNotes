@@ -19,3 +19,15 @@ if 'results' in data:
         print(name)
 else:
     print("Couldn't fetch Pokémon data. Try again!")
+
+
+url = 'https://pokeapi.co/api/v2/pokemon?limit=1000'
+payload = {'name': 'John Doe', 'email': 'john.doe@example.com'}
+response = requests.post(url, json=payload)
+
+if response.status_code == 201:
+    print('User created successfully.')
+    print(response.json())
+else:
+    print(f'Failed to create user. Status code: {response.status_code}')
+
